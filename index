@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APK欢迎页</title>
+	<meta http-equiv="content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+</head>
+<body>
+	<div id="pagewrap">		
+			<div class="top">
+			 	<img src="images/welcome_01.jpg" >
+			</div>
+	
+			<div class="bottom">
+				<div class="page-caption">	
+					欢迎来到<span>老鲜生海鲜</span>店!!
+				</div>
+				<div id="page-logo">
+					<span>LOGO</span>
+				</div>
+			</div>
+	</div><!-- /#pagewrap -->
+</body>
+</html>
+<script>
+        (function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth /1080) + 'px';
+            };
+
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
